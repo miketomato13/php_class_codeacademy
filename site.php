@@ -7,8 +7,30 @@
   <body>
     <?php
 
+    // WORKING WITH NUMBERS
+    // echo 7; // whole number or integer
+    // echo 7.7; // floating point number or decimal
+    // echo 10 % 3; // modulo operator- gives you remainder
+    // $num = 10;
+    // $num += 25;
+    // $num++; // adds 1 to the number, -- subtracts 1 from the number
+    // echo pow(2,4); //raise to the x power
+    // echo sqrt(144); //sq rt
+    // echo max(2,10); //which number is bigger, min( )handles smaller
+    echo round(3.2);
+
+
     // WORKING WITH STRINGS
-    echo "Giraffe Academy";
+    // $phrase = "Giraffe Academy";
+    // echo strtolower($phrase);
+    // echo strtoupper($phrase);
+    // echo strlen($phrase);
+    // echo $phrase[3];
+    // echo $phrase[0] = "B";
+    // echo $phrase
+    // echo str_replace("Giraffe", "Panda", $phrase);
+    // echo substr($phrase, 8, 3);
+
 
     // DATA TYPES
     /* $phrase = "To be or not to be"; //string
