@@ -5,7 +5,17 @@
     <title></title>
   </head>
   <body>
+
+    <form action="site.php" method="get">
+      Name: <input type="text" name="name">
+      <input type="submit">
+    </form>
+    <br>
+
     <?php
+
+    // GETTING USER INPUT
+    echo $_GET["name"];
 
     // WORKING WITH NUMBERS
     // echo 7; // whole number or integer
@@ -17,7 +27,9 @@
     // echo pow(2,4); //raise to the x power
     // echo sqrt(144); //sq rt
     // echo max(2,10); //which number is bigger, min( )handles smaller
-    echo round(3.2);
+    // echo round(3.2); // standard rounding rules apply
+    // echo ceil(3.3); // rounds up no matter what
+    // echo floor(3.3); // rounds down always
 
 
     // WORKING WITH STRINGS
@@ -49,5 +61,8 @@
       echo "He really liked the name $characterName <br>";
       echo "But he didn't like being $characterAge <br>"; */
     ?>
+
+
+
   </body>
 </html>
