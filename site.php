@@ -6,16 +6,45 @@
   </head>
   <body>
 
-    <form action="site.php" method="get">
-      Name: <input type="text" name="name">
+
+    <!-- <form action="site.php" method="post">
+      Name: <input type="password" name="password">
       <input type="submit">
     </form>
-    <br>
+    <br> -->
+
+    <form action="site.php" method="post">
+      Apples:  <input type="checkbox" name="fruits[]" value="apples">
+      Oranges: <input type="checkbox" name="fruits[]" value="oranges">
+      Bananas: <input type="checkbox" name="fruits[]" value="bananas">
+      <input type="submit">
+    </form>
 
     <?php
+    // USING CHECKBOXES
+    $fruits = $_POST["fruits"];
+    echo $fruits[0];
 
-    // GETTING USER INPUT
-    echo $_GET["name"];
+
+    // ARRAY
+    // $newArray = array("Kevin", "Karen", "Oscar", "Jim");
+    // $newArray[1] = "Dwight";
+    // echo $newArray[1];
+    // $newArray[4] = "Angela";
+    // echo $newArray;
+    // echo count($newArray);
+    // echo $newArray[4]
+
+    // POST VS GET
+    // echo $_POST["password"];
+
+
+    // URL PARAMS
+    // echo $_GET["name"];
+    // echo $_GET["age"]; // input param into url, not into form, it populates on page
+
+    // GET USER INFO
+    // echo $_GET["name"];
 
     // WORKING WITH NUMBERS
     // echo 7; // whole number or integer
