@@ -21,13 +21,17 @@
     </form> -->
 
     <?php
+
     // IF STATEMENT
-    $isMale = false;
-    if ($isMale){
-      echo "You are male";
-    } else {
-      echo "You are female";
-    }
+    // $isMale = true;
+    // $isTall = false;
+    // if ($isMale && $isTall){
+    //   echo "You are male";
+    // } else if($isMale && !$isTall) {
+    //   echo "You aren't tall bro";
+    // } else {
+    //   echo "You are female";
+    // }
 
     // RETURN STATEMENTS
     // function cube($num) {
