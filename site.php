@@ -27,6 +27,12 @@
     </form> -->
 
     <?php
+    // FOR LOOP
+    $luckyNumbers = array(4,8,16,23,42);
+    for($index=0; $index < count($luckyNumbers); $index++){
+      echo "$luckyNumbers[$index] <br/>";
+    }
+
     // WHILE LOOP
     // $index = 1;
     // while($index <= 5){
