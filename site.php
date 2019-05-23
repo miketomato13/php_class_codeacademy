@@ -20,14 +20,71 @@
       <input type="submit">
     </form> -->
 
+    <!-- <form class="" action="site.php" method="post">
+      What was your Grade?
+      <input type="text" name="grade" value="">
+      <input type="submit">
+    </form> -->
+
     <?php
+    // WHILE LOOP
+    // $index = 1;
+    // while($index <= 5){
+    //   echo "$index <br/>";
+    //   $index++;
+    // }
+
+    // DO WHILE LOOP
+    // $num = 6;
+    // do{
+    //   echo "$num <br/>";
+    //   $num++;
+    // }while($num <= 5);
+
+    // SWITCH STATEMENTS
+    // $grade = $_POST["grade"];
+    // switch($grade){
+    //   case "A":
+    //     echo "You Got an A! You did great!";
+    //     break;
+    //   case "B":
+    //     echo "You got a B! Good Job!";
+    //     break;
+    //   case "C":
+    //     echo "You got a C! Try harder Next time!";
+    //     break;
+    //   case "D":
+    //     echo "You got a D! You suck dick!";
+    //     break;
+    //   case "F":
+    //     echo "You got an F! You're an absolute failure!";
+    //     break;
+    //   default:
+    //     echo "You did not put in a valid input";
+    //     break;
+    // }
+
+
+
+    // IF STATEMENTS CONTINUED
+    // function getMax($num1, $num2, $num3){
+    //   if ($num1 >= $num2 && $num1 >= $num3) {
+    //     echo $num1;
+    //   } else if ($num2 >= $num1 && $num2 >= $num3) {
+    //     echo $num2;
+    //   } else {
+    //     echo $num3;
+    //   }
+    // }
+    //
+    // getMax(7,7,22);
 
     // IF STATEMENT
     // $isMale = true;
     // $isTall = false;
     // if ($isMale && $isTall){
     //   echo "You are male";
-    // } else if($isMale && !$isTall) {
+    // } else if($isMale && !$isTall){
     //   echo "You aren't tall bro";
     // } else {
     //   echo "You are female";
