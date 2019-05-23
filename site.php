@@ -27,11 +27,134 @@
     </form> -->
 
     <?php
-    // FOR LOOP
-    $luckyNumbers = array(4,8,16,23,42);
-    for($index=0; $index < count($luckyNumbers); $index++){
-      echo "$luckyNumbers[$index] <br/>";
+    // INHERITANCE
+    class Chef {
+      function makeChicken(){
+        echo "The chef makes chicken<br>";
+      }
+
+      function makeSpecialDish(){ // function over-ridden below
+        echo "The chef makes ribs<br>";
+      }
+
+      function makeSalad(){
+        echo "the chef makes a salad<br>";
+      }
     }
+
+    class ItalianChef extends Chef {
+      function makePasta(){
+        echo "the chef makes mean pasta<br>";
+      }
+      function makeSpecialDish(){  // over-riding a function
+        echo "I made a bowl of linguini<br>";
+      }
+    }
+    $chef = new Chef();
+    $italianChef = new ItalianChef();
+
+    $chef->makeSpecialDish();
+    $italianChef->makeSpecialDish();
+    // GETTERS AND SETTERS
+    // class Movie {
+    //   public $title;
+    //   private $rating;
+    //
+    //   function __construct($title, $rating){
+    //     $this->title = $title;
+    //     $this->setRating($rating);
+    //   }
+    //
+    //   function getRating(){
+    //     return $this->rating;
+    //   }
+    //
+    //   function setRating($rating){
+    //     if ($rating == "G" || $rating == "PG" || $rating == "R" || $rating == "PG-13") {
+    //       $this->rating = $rating;
+    //     } else {
+    //       $this->rating = "NR";
+    //     }
+    //   }
+    //
+    // }
+    //
+    // $avengers = new Movie("Avengers", "PG-13");
+    //
+    // $avengers->setRating("G");
+    // echo $avengers->getRating();
+
+    // OBJECT FUNCTION
+    // class Student {
+    //   var $name;
+    //   var $major;
+    //   var $gpa;
+    //
+    //   function __construct($name, $major, $gpa){
+    //     $this->name = $name;
+    //     $this->major = $major;
+    //     $this->gpa = $gpa;
+    //   }
+    //
+    //   function hasHonors(){
+    //     if ($this->gpa >= 3.5) {
+    //       return "This student has honors!";
+    //     } else {
+    //       return "This student doesn't have honors!";
+    //     }
+    //   }
+    // }
+    //
+    // $student1 = new Student("Jim", "Business", 2.8);
+    // $student2 = new Student("Pam", "Art", 3.6);
+    //
+    // echo $student2->hasHonors();
+
+
+
+    // CLASSES AND OBJECTS & CONSTRUCTORS
+    // class Book {
+    //   var $title;
+    //   var $author;
+    //   var $pages;
+    //
+    //   function __construct($aTitle,$aAuthor,$aPages){
+    //     $this->title = $aTitle;
+    //     $this->author = $aAuthor;
+    //     $this->pages = $aPages;
+    //   }
+    // }
+    //
+    // $book1 = new Book("Harry Potter", "JK Rowling", 400);
+    // $book2 = new Book("Woodsong", "Gary Paulson", 232);
+    //
+    //
+    // echo $book2->title;
+
+
+
+
+
+
+    // INCLUDE OTHER PHP FILES
+    // $title = "My First Post";
+    // $author = "Mike";
+    // $wordCount = 400;
+    // include "article-header.php"
+    // include "useful_tools.php";
+    //
+    // echo $feetInMile;
+    // sayHi("Mike");
+
+
+    // INCLUDE -- same header/footer
+    // include "header.html";
+
+    // FOR LOOP
+    // $luckyNumbers = array(4,8,16,23,42);
+    // for($index=0; $index < count($luckyNumbers); $index++){
+    //   echo "$luckyNumbers[$index] <br/>";
+    // }
 
     // WHILE LOOP
     // $index = 1;
@@ -189,6 +312,7 @@
       echo "He really liked the name $characterName <br>";
       echo "But he didn't like being $characterAge <br>"; */
     ?>
+
 
 
 
