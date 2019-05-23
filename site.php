@@ -8,22 +8,54 @@
 
 
     <!-- <form action="site.php" method="post">
-      Name: <input type="password" name="password">
+      <input type="text" name="student">
       <input type="submit">
     </form>
     <br> -->
 
-    <form action="site.php" method="post">
+    <!-- <form action="site.php" method="post">
       Apples:  <input type="checkbox" name="fruits[]" value="apples">
       Oranges: <input type="checkbox" name="fruits[]" value="oranges">
       Bananas: <input type="checkbox" name="fruits[]" value="bananas">
       <input type="submit">
-    </form>
+    </form> -->
 
     <?php
+    // IF STATEMENT
+    $isMale = false;
+    if ($isMale){
+      echo "You are male";
+    } else {
+      echo "You are female";
+    }
+
+    // RETURN STATEMENTS
+    // function cube($num) {
+    //   return pow($num, 3);
+    // }
+    //
+    // $cubeResult = cube(8);
+    //
+    // echo $cubeResult;
+
+
+    // FUNCTION
+    // function sayHi($name, $age){
+    //   echo "Hello $name, you are $age";
+    // }
+    //
+    // sayHi("Mike", 40);
+
+    // ASSOCIATIVE ARRAY - key value pairs
+    // $grades = array("Jim"=>"A+", "Karen"=>"B+", "Oscar"=>"C-");
+    // echo $grades[$_POST["student"]]
+    // $grades["Jim"] = "F";
+    // echo $grades["Jim"];
+    // echo count($grades);
+
     // USING CHECKBOXES
-    $fruits = $_POST["fruits"];
-    echo $fruits[0];
+    // $fruits = $_POST["fruits"];
+    // echo $fruits[0];
 
 
     // ARRAY
